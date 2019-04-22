@@ -1,0 +1,51 @@
+@import '../variables';
+
+.hero {
+    min-height: calc(100vh - #{$headerHeight});    
+
+    &__title {
+        font-family: $fontSpecial;
+        font-size: 64px;
+        margin-bottom: 20px;
+    }
+
+    &__subtitle {
+        font-size: 22px;
+        color: $secondaryTextColor;
+        background: $highlightColor;
+        border: 2px solid $highlightColor;
+        padding: 5px 15px;
+        border-radius: 10px;
+    }
+    
+    &__scrolldown {
+        position: absolute;
+        bottom: 50px;
+        left: 50%;
+        transform: translate(-50%, 0);
+
+        @media screen and (max-width: $media-xs-end) {
+            display: none;
+        }
+    }
+}
+
+.home {
+    &__memes {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    &__meme {
+        padding: 0 15px;
+        width: 25%;
+        
+        @media screen and (max-width: $media-md-end) {
+            width: 33.3333%;
+        }
+
+        @media screen and (max-width: $media-sm-end) {
+            width: 100%;
+        }
+    }
+}

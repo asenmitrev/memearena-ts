@@ -1,0 +1,10 @@
+@import './styles/variables';
+
+.app {
+    padding-top: $headerHeight;
+    padding-bottom: 30px;
+}
+
+.side-menu {
+    top: $headerHeight !important;
+}

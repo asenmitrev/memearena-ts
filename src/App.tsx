@@ -1,28 +1,36 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Duel from './components/Duel';
+import Upload from './components/Upload';
+import Home from './components/Home';
+import Meme from './components/Meme';
+import Header from './components/Header';
+import SideMenu from './components/SideMenu';
+import { Switch, Route, Redirect } from 'react-router-dom';
+import { History } from 'history';
+import './App.scss';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.tsx</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+interface Props {
+    history: History
+}
+
+class App extends Component<Props> {
+    render() {
+        return (
+            <div className="app">
+                <Header></Header>
+
+                <SideMenu></SideMenu>
+                
+                <Switch>
+                    <Route path="/memes/:id" component={Meme}/>
+                    <Route path="/upload" component={Upload}/>
+                    <Route path="/duel" component={Duel}/>
+                    <Route path="/" component={Home}/>
+                    <Redirect to="/" />
+                </Switch>
+            </div>
+        );
+    }
 }
 
 export default App;

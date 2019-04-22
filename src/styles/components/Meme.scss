@@ -1,0 +1,18 @@
+@import '../variables';
+
+.meme {
+    padding: 30px 0;
+
+    &__load-more {
+        color: $secondaryTextColor;
+        background: $highlightColor;
+        border: 2px solid $highlightColor;
+        padding: 5px 15px;
+        border-radius: 10px;
+        display: inline-block;
+    }
+}
+
+.ui.comments {
+    max-width: 100%;
+}

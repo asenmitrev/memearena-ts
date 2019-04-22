@@ -1,0 +1,29 @@
+@import '../variables';
+
+.header {
+    &__container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: $headerHeight;
+        background: $headerBackgroundColor;
+        padding-left: 20px;
+        z-index: 1000;
+    }
+
+    &__logo {
+        color: $secondaryTextColor;
+        font-family: $fontSpecial;
+    }
+
+    &__menu {
+        height: $headerHeight;
+        width: $headerHeight;
+        padding: 14px;
+        
+        &--active {
+            background: black;
+        }
+    }
+}

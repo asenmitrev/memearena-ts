@@ -1,0 +1,112 @@
+@import './variables';
+
+.margin {
+    &-bottom {
+        &__big {
+            margin-bottom: $margin-big;
+        }
+        &__medium {
+            margin-bottom: $margin-medium;
+        }
+        &__small {
+            margin-bottom: $margin-small;
+        }
+    }
+    &-top {
+        &__big {
+            margin-top: $margin-big;
+        }
+        &__medium {
+            margin-top: $margin-medium;
+        }
+        &__small {
+            margin-top: $margin-small;
+        }
+    }
+    &-sides {
+        &__big {
+            margin: 0 $margin-big;
+        }
+        &__medium {
+            margin: 0 $margin-medium;
+        }
+        &__small {
+            margin: 0 $margin-small;
+        }
+    }
+    &-left {
+        &__big {
+            margin-left: $margin-big;
+        }
+        &__medium {
+            margin-left: $margin-medium;
+        }
+        &__small {
+            margin-left: $margin-small;
+        }
+    }
+    &-right {
+        &__big {
+            margin-right: $margin-big;
+        }
+        &__medium {
+            margin-right: $margin-medium;
+        }
+        &__small {
+            margin-right: $margin-small;
+        }
+    }
+}
+
+.padding {
+    &-bottom {
+        &__default {
+            padding-bottom: $padding-default;
+        }
+        &__big {
+            padding-bottom: $padding-big;
+        }
+        &__medium {
+            padding-bottom: $padding-medium;
+        }
+        &__small {
+            padding-bottom: $padding-small;
+        }
+    }
+    &-top {
+        &__default {
+            padding-top: $padding-default;
+        }
+        &__big {
+            padding-top: $padding-big;
+        }
+        &__medium {
+            padding-top: $padding-medium;
+        }
+        &__small {
+            padding-top: $padding-small;
+        }
+    }
+    &-left {
+        &__big {
+            padding-left: $padding-big;
+        }
+        &__medium {
+            padding-left: $padding-medium;
+        }
+        &__small {
+            padding-left: $padding-small;
+        }
+    }
+    &-right {
+        &__big {
+            padding-right: $padding-big;
+        }
+        &__medium {
+            padding-right: $padding-medium;
+        }
+        &__small {
+            padding-right: $padding-small;
+        }
+    }
+}
